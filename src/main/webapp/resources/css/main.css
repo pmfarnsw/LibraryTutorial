@@ -1,0 +1,160 @@
+.container {
+	background-color: white;
+	padding: 10px;
+}
+
+.pull-right {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.help-block {
+	display: inline;
+	margin-left: 5px;
+	color: red;
+}
+
+.glyphicon-ok {
+	color: #4CAE4C;
+}
+
+header {
+	background-color: #588C7E;
+	padding: 20px;
+	color: #F2E394;
+}
+
+header img {
+	width: 100px;
+	height: 150px;
+}
+
+strong {
+	color: #588C7E;
+}
+
+footer {
+	background-color: #588C7E;
+	padding: 15px;
+	color: #F2E394;
+	width: 100%;
+}
+
+.limited {
+	margin-bottom: 10px;
+}
+
+.info {
+	color: #F2E394;
+}
+
+.gridStyle {
+	border: 1px solid rgb(212, 212, 212);
+	width: 100%;
+	height: 600px;
+	margin-top: 20px;
+}
+
+.space {
+	height: 120px;
+}
+
+/* Nav bar css */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #E0E4CC;
+}
+
+.nav ul {
+	list-style: none;
+	background-color: #F2AE72;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px solid #888;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.nav a:hover {
+	background-color: #D96459;
+	transition: .3s background-color;
+}
+
+.active {
+	background-color: #8C4646;
+}
+
+/* css for main content */
+.container {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-color: #E0E4CC;
+}
+
+.center {
+	width: 20%;
+	margin-left: 40%;
+}
+
+/* home page tile css*/
+.homePageTile {
+	padding: 10px;
+}
+
+.tileContent {
+	background-color: white;
+	width: 100%;
+	padding: 15px;
+}
+
+.homePageTile img {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 680px) {
+	.nav li {
+		width: 200px;
+		border-bottom: none;
+		height: 50px;
+		line-height: 50px;
+		font-size: 1.4em;
+	}
+	.nav li {
+		float: left;
+	}
+	.nav ul {
+		overflow: auto;
+	}
+	.container {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	/* Header css */
+	#libraryName {
+		display: inline-block;
+	}
+	#libraryImg {
+		float: right;
+		padding: 2px;
+	}
+	header {
+		overflow: auto;
+	}
+}

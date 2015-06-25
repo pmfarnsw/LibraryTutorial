@@ -1,0 +1,258 @@
+/********************
+ global font colors
+ 
+ ********************/
+@header-footer-background: #588c7e; //dark green
+@header-footer-color: #f2e394; //light yellow
+@body-background: #E0E4CC; //light green
+@nav-bar-background:#F2AE72; //light orange
+@nav-bar-hover: #D96459; //light red
+@nav-bar-active:#8C4646; //dark red
+@nav-bar-color: white; //white
+@valid: #4CAE4C; //lime green
+@invalid: red;// red
+/********************
+ global variable
+ 
+ ********************/
+@max:100%;
+
+
+/********************
+ Header and Footer css
+ 
+ ********************/
+
+	header 
+	{
+		background-color:@header-footer-background;
+		padding:20px;
+		color:@header-footer-color;
+		img {
+			width:100px;
+			height:150px;
+		}
+	}
+	
+	
+	footer 
+	{
+		background-color:@header-footer-background;
+		padding:15px;
+		color:@header-footer-color;
+		width:@max;
+     
+          .limited {
+               margin-bottom: 10px;
+          }
+
+	}
+
+/********************
+ main content
+ 
+ ********************/	
+	
+strong 
+{
+	color: @header-footer-background;
+}
+	
+	.container 
+	{
+		
+		padding: 10px;
+	    height: @max;
+	    width: @max;
+	    margin: 0 auto;
+	    margin-top: 15px;
+	    background-color: @body-background;
+	}
+
+     .center 
+     {
+	    width: 20%;
+	    margin-left: 40%;
+     }
+
+     body 
+     {
+          font-family: 'Oswald', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: @body-background;
+     }
+
+
+.space 
+{
+	height: 120px;
+}
+
+/********************
+ save changes and add book buttons
+ 
+ ********************/	
+.pull-right 
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+/********************
+ tries to fix delete button 
+glyphicon position
+ 
+ ********************/
+.center 
+{
+	width: 20%;
+	margin-left: 40%;
+}
+
+/********************
+  form validation output 
+ 
+ ********************/	
+
+.help-block {
+	display: inline;
+	margin-left: 5px;
+	color: @invalid;
+}
+
+.glyphicon-ok {
+	color: @valid;
+}
+
+/********************
+ navigation bar
+ 
+ ********************/	
+
+.nav
+{
+     ul 
+     {
+          list-style: none;
+          background-color: @nav-bar-background ;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+     }
+     
+     li 
+     {
+          
+          font-size: 1.2em;
+          line-height: 40px;
+          height: 40px;
+          border-bottom: 1px solid #888;
+     }
+     
+     a 
+     {
+          text-decoration: none;
+          color: @nav-bar-color;
+          display: block;
+     }
+     
+     a:hover 
+     {
+          background-color:@nav-bar-hover ;
+          transition: .3s background-color;
+     }
+
+     
+}
+
+.active 
+{
+	background-color: @nav-bar-active;
+}
+
+/********************
+ ng grid 
+ 
+ ********************/	
+.gridStyle
+{
+	border: 1px solid rgb(212, 212, 212);
+	width: @max;
+	height: 600px;
+	margin-top: 20px;
+}
+
+
+/********************
+ makes changes to nav bar,
+header, and main container css
+when screen is larger than 680 pixels
+ 
+ ********************/	
+@media screen and (min-width: 680px) {
+     
+/********************
+navigation bar
+
+********************/	
+     .nav 
+     {
+          li
+          {
+               width: 200px;
+               border-bottom: none;
+               height: 50px;
+               line-height: 50px;
+               font-size: 1.4em;
+               float: left;
+          }
+          
+          ul 
+          {
+               overflow: auto;
+          }
+
+
+     }
+     
+
+
+/********************
+ main content
+ 
+ ********************/	
+     .container 
+     {
+        margin: 0 auto;
+        width: 80%;
+     }
+
+/********************
+ header
+ 
+ ********************/	
+
+     header 
+     {
+          overflow: auto;
+
+          #libraryName 
+          {
+               display: inline-block;
+          }
+          
+          #libraryImg 
+          {
+             float: right;
+             padding: 2px;
+          }
+     }
+}
+
+
+ 
+
+
+
+
